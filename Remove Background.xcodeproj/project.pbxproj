@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE8890E82BA74CB80020A19C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8890E72BA74CB80020A19C /* AppDelegate.swift */; };
 		AECDC9A32BA603AF00647B35 /* Remove_BackgroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECDC9A22BA603AF00647B35 /* Remove_BackgroundApp.swift */; };
 		AECDC9A52BA603AF00647B35 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECDC9A42BA603AF00647B35 /* ContentView.swift */; };
 		AECDC9A72BA603B200647B35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AECDC9A62BA603B200647B35 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 		AECDC9BF2BA603B200647B35 /* Remove_BackgroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECDC9BE2BA603B200647B35 /* Remove_BackgroundUITests.swift */; };
 		AECDC9C12BA603B200647B35 /* Remove_BackgroundUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECDC9C02BA603B200647B35 /* Remove_BackgroundUITestsLaunchTests.swift */; };
 		AECDC9CE2BA6040800647B35 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECDC9CD2BA6040800647B35 /* HomeView.swift */; };
+		AEEE199D2BA7C1C1006AE6A9 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEE199C2BA7C1C1006AE6A9 /* Repository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AE8890E62BA74C720020A19C /* Remove-Background-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Remove-Background-Info.plist"; sourceTree = SOURCE_ROOT; };
+		AE8890E72BA74CB80020A19C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AECDC99F2BA603AF00647B35 /* Remove Background.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Remove Background.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AECDC9A22BA603AF00647B35 /* Remove_BackgroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Remove_BackgroundApp.swift; sourceTree = "<group>"; };
 		AECDC9A42BA603AF00647B35 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,6 +51,7 @@
 		AECDC9BE2BA603B200647B35 /* Remove_BackgroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Remove_BackgroundUITests.swift; sourceTree = "<group>"; };
 		AECDC9C02BA603B200647B35 /* Remove_BackgroundUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Remove_BackgroundUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		AECDC9CD2BA6040800647B35 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		AEEE199C2BA7C1C1006AE6A9 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +102,12 @@
 		AECDC9A12BA603AF00647B35 /* Remove Background */ = {
 			isa = PBXGroup;
 			children = (
+				AE8890E62BA74C720020A19C /* Remove-Background-Info.plist */,
 				AECDC9A22BA603AF00647B35 /* Remove_BackgroundApp.swift */,
 				AECDC9A42BA603AF00647B35 /* ContentView.swift */,
+				AE8890E72BA74CB80020A19C /* AppDelegate.swift */,
 				AECDC9CD2BA6040800647B35 /* HomeView.swift */,
+				AEEE199C2BA7C1C1006AE6A9 /* Repository.swift */,
 				AECDC9A62BA603B200647B35 /* Assets.xcassets */,
 				AECDC9AB2BA603B200647B35 /* Remove_Background.entitlements */,
 				AECDC9A82BA603B200647B35 /* Preview Content */,
@@ -262,7 +270,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE8890E82BA74CB80020A19C /* AppDelegate.swift in Sources */,
 				AECDC9CE2BA6040800647B35 /* HomeView.swift in Sources */,
+				AEEE199D2BA7C1C1006AE6A9 /* Repository.swift in Sources */,
 				AECDC9A52BA603AF00647B35 /* ContentView.swift in Sources */,
 				AECDC9A32BA603AF00647B35 /* Remove_BackgroundApp.swift in Sources */,
 			);
@@ -304,6 +314,8 @@
 		AECDC9C22BA603B200647B35 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -338,7 +350,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -367,6 +379,8 @@
 		AECDC9C32BA603B200647B35 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -401,7 +415,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -433,6 +447,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Remove-Background-Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -460,6 +475,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Remove-Background-Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

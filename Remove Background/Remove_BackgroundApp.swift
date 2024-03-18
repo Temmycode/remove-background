@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct Remove_BackgroundApp: App {
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    @State private var repositoryProvider = Repository()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(repositoryProvider)
         }
     }
 }
